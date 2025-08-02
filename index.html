@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Nature 1" />
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1011/600/400" alt="City 1" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/id/1005/600/400" alt="People 1" />
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1020/600/400" alt="Nature 2" />
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1031/600/400" alt="City 2" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/id/1027/600/400" alt="People 2" />
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1014/600/400" alt="Nature 3" />
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1054/600/400" alt="City 3" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/id/1008/600/400" alt="People 3" />
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Full View" />
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
